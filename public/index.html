@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MemoVault</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>MemoVault</h1>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search notes..."
+        />
+      </div>
+    </header>
+
+    <div class="notes-grid" id="notesContainer">
+    </div>
+
+    <button id="addBtn" class="add-btn">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+
+  </div>
+
+  <!-- Modal -->
+
+  <div class="modal" id="noteModal">
+
+    <div class="modal-content">
+
+      <h2>Create Note</h2>
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Note Title"
+      />
+
+      <textarea
+        id="content"
+        placeholder="Write something..."
+      ></textarea>
+
+      <select id="category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Ideas">Ideas</option>
+        <option value="Study">Study</option>
+      </select>
+
+      <div class="modal-buttons">
+        <button id="saveBtn">Save</button>
+        <button id="closeBtn">Cancel</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
